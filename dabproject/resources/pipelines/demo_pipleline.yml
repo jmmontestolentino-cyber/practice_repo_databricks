@@ -1,0 +1,17 @@
+resources:
+  pipelines:
+    pipeline_demopipeline:
+      name: demopipeline
+      libraries:
+        - glob:
+            include: ../../src/pipelines/New
+              Pipeline 2026-05-28 15:25/transformations/**
+      schema: default
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: ${var.catalog_name}
+      serverless: true
+      root_path: ../../src/pipelines/New
+        Pipeline 2026-05-28 15:25
